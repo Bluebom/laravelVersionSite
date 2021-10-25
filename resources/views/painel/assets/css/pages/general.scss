@@ -1,0 +1,236 @@
+div.painel_content {
+    width: 100%;
+    height: calc(100% - 3rem);
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    padding: 0.75rem;
+    transition: all 0.7s ease-in-out;
+    overflow-x: hidden;
+    div.box_content {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #f6f6f6;
+        box-shadow: 0 0 0.1rem #000;
+        border-radius: 1rem;
+        padding: 1.5rem 2rem;
+        margin-bottom: 1.25rem;
+        h1 {
+            padding: 1rem 0;
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+        }
+        div.div_content_wrap {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            div {
+                margin: 2% auto;
+                width: 32.5%;
+                min-width: 13rem;
+                height: auto;
+                padding: 0rem 1rem 1rem 1rem;
+                color: white;
+                h2 {
+                    font-weight: 300;
+                    padding: 0.5rem 0;
+                    font-size: 1.25rem;
+                }
+                span {
+                    font-weight: 500;
+                    font-size: 2rem;
+                }
+            }
+            .users_on {
+                background-color: orange;
+            }
+            .all_visits {
+                background-color: tomato;
+            }
+            .today_visits {
+                background-color: green;
+            }
+        }
+    }
+}
+
+.box_content form {
+    margin: 2rem 0;
+    label {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: black;
+    }
+    .form_group {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+    & input[type="text"],
+    & input[type="password"],
+    & input[type="email"],
+    textarea {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: normal;
+        width: 100%;
+        height: 2.5rem;
+        padding-left: 0.5rem;
+    }
+    textarea {
+        height: 10rem;
+        padding: 0.5rem;
+        resize: vertical;
+    }
+    select {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: normal;
+        width: 100%;
+        height: 2.75rem;
+        padding: 0.5rem;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        outline: none;
+        border: 0.1rem solid #ccc;
+        cursor: pointer;
+    }
+
+    .down-arrow::after {
+        display: block;
+        text-align: right;
+        margin-top: -2.25rem;
+        content: "\2193";
+        font-size: 1.75rem;
+        color: #aaa;
+        cursor: pointer;
+    }
+
+    input[type="file"] {
+        margin-top: 0.5rem;
+        width: 100%;
+        padding: 0.5rem;
+        border: 0.1rem solid #ccc;
+        border-radius: 0.25rem;
+    }
+    input[type="submit"] {
+        display: block;
+        width: 100%;
+        height: 2.25rem;
+        margin: 2% auto;
+        cursor: pointer;
+        background-color: #6fcf97;
+        font-size: 1.5rem;
+        text-shadow: 0rem 0.125rem 4px #111;
+        color: white;
+        border: 0.1rem solid green;
+        border-radius: 0.25rem;
+        text-indent: 0;
+        &:hover {
+            background-color: #6fcf97d0;
+        }
+    }
+}
+
+/* Cadastrar hablidade */
+div.form_group.range input[type="range"] {
+    border: none;
+    height: 38px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
+    &::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 16px;
+        cursor: pointer;
+        animation: 0.2s;
+        box-shadow: 1px 1px 1px #50555c;
+        background: $color3D;
+        border-radius: 8px;
+        border: 0px solid #000000;
+    }
+    &::-webkit-slider-thumb {
+        box-shadow: 0px 0px 0px #000000;
+        border: 0px solid #000000;
+        height: 32px;
+        width: 24px;
+        border-radius: 8px;
+        background: #cccccc;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -8px;
+    }
+    &:focus::-webkit-slider-runnable-track {
+        background: $color3D;
+    }
+    &::-moz-range-track {
+        width: 100%;
+        height: 16px;
+        cursor: pointer;
+        animation: 0.2s;
+        box-shadow: 1px 1px 1px #50555c;
+        background: $color3D;
+        border-radius: 8px;
+        border: 0px solid #000000;
+    }
+    &::-moz-range-thumb {
+        box-shadow: 0px 0px 0px #000000;
+        border: 0px solid #000000;
+        height: 32px;
+        width: 24px;
+        border-radius: 8px;
+        background: #cccccc;
+        cursor: pointer;
+    }
+
+    &::-ms-track {
+        width: 100%;
+        height: 16px;
+        cursor: pointer;
+        animation: 0.2s;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+
+    &::-ms-fill-lower {
+        background: $color3D;
+        border: 0px solid #000000;
+        border-radius: 24px;
+        box-shadow: 1px 1px 1px #50555c;
+    }
+
+    &::-ms-fill-upper {
+        background: $color3D;
+        border: 0px solid #000000;
+        border-radius: 24px;
+        box-shadow: 1px 1px 1px #50555c;
+    }
+    &::-ms-thumb {
+        margin-top: 1px;
+        box-shadow: 0px 0px 0px #000000;
+        border: 0px solid #000000;
+        height: 32px;
+        width: 24px;
+        border-radius: 8px;
+        background: #cccccc;
+        cursor: pointer;
+    }
+
+    &:focus::-ms-fill-lower {
+        background: $color3D;
+    }
+
+    &:focus::-ms-fill-upper {
+        background: $color3D;
+    }
+}

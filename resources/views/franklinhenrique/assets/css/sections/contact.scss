@@ -1,0 +1,134 @@
+/* Contact */
+
+section#Contact {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div.flex_contact {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        form {
+            width: 100%;
+            height: 100%;
+            max-width: 30rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            span.callback_success {
+                display: none;
+                padding: 0.7rem;
+                background: linear-gradient(to left, #6fcf97, #6fcf97);
+                text-align: left;
+                position: relative;
+                top: -1rem;
+                color: white;
+                font-weight: bold;
+                text-shadow: -0.05rem 0.1rem 4px rgba(0, 0, 0, 0.6);
+                &::before {
+                    content: "-";
+                    font-size: 0.005px;
+                    position: absolute;
+                    bottom: -30%;
+                    border-right: 1rem solid transparent;
+                    border-left: 1rem solid transparent;
+                    border-top: 1rem solid #6fcf97;
+                }
+            }
+
+            span.callback_error {
+                display: none;
+                padding: 0.7rem;
+                background: linear-gradient(to left, #ff2a2a, #ff2a2a);
+                text-align: left;
+                position: relative;
+                top: -1rem;
+                color: white;
+                font-weight: bold;
+                text-shadow: -0.05rem 0.1rem 4px rgba(0, 0, 0, 0.6);
+                &::before {
+                    content: "-";
+                    font-size: 0.005px;
+                    position: absolute;
+                    bottom: -30%;
+                    border-right: 1rem solid transparent;
+                    border-left: 1rem solid transparent;
+                    border-top: 1rem solid #ff2a2a;
+                }
+            }
+            .w100 {
+                display: block;
+                margin-bottom: 1rem;
+                width: 100%;
+                position: relative;
+                input[type="text"],
+                input[type="email"],
+                textarea {
+                    width: 100%;
+                    padding: 0.5rem 0.25rem;
+                    border: 0.1rem solid black;
+                    text-indent: 2rem;
+                }
+                textarea {
+                    text-indent: 0.5rem;
+                    width: 100%;
+                }
+                input[type="submit"] {
+                    width: 100%;
+                }
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 4%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        div.my_contacts {
+            background: rgba(0, 0, 0, 0.85);
+            width: 100%;
+            margin: 2rem 0;
+            max-width: 30rem;
+            padding: 0.7rem 2%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: -0.1rem 0.1rem 5px #111;
+            p {
+                max-width: 18rem;
+                font-weight: normal;
+                font-family: var(--font03);
+                text-indent: 0.25rem;
+                letter-spacing: 0.075rem;
+                color: white;
+            }
+            .wrap {
+                width: 12rem;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+            a {
+                &:first-of-type {
+                    color: #6fcf97;
+                    font-size: 2.7rem;
+                    text-shadow: -0.1rem 0.1rem 5px #111;
+                }
+                &:last-of-type {
+                    color: #0088cc;
+                    font-size: 2.7rem;
+                    text-shadow: -0.1rem 0.1rem 5px #111;
+                }
+            }
+        }
+    }
+}

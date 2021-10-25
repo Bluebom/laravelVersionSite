@@ -1,0 +1,160 @@
+/* About */
+
+section#About {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 1rem;
+    background-color: #aaaaaa1a;
+    border: 0.1rem solid $color2B;
+    .form_hexx {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div.w33 {
+            width: 33%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            & > div {
+                display: block;
+                width: 7rem;
+                padding: 3.5rem;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            h3 {
+                font-size: 1.5rem;
+                line-height: 30px;
+                font-family: $main-font;
+                font-weight: bold;
+                color: $color2B;
+            }
+            p {
+                width: 90%;
+                margin-top: 0.3rem;
+                max-width: 19rem;
+                font-family: $secondary-font;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+        div.hex_about_1 {
+            background-image: url("/franklinhenrique/assets/img/hexagon\ 1.svg");
+        }
+        div.hex_about_2 {
+            background-image: url("/franklinhenrique/assets/img/hexagon\ 2.svg");
+        }
+        div.hex_about_3 {
+            background-image: url("/franklinhenrique/assets/img/hexagon\ 3.svg");
+        }
+    }
+    section.who_i_am {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        div.w50 {
+            width: 50%;
+        }
+        div.description {
+            text-align: center;
+            img {
+                width: auto;
+                height: 15rem;
+            }
+
+            p {
+                font-family: $secondary-font;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                padding: 0 3rem;
+            }
+            h3 {
+                padding-top: 0.3rem;
+                font-size: 1.4rem;
+                font-family: $main-font;
+                font-style: normal;
+                font-weight: 500;
+                a {
+                    color: $color2B;
+                    cursor: pointer;
+                    text-shadow: -0.2rem 0.2rem 1px $main-color;
+                }
+                &:hover {
+                    text-decoration: underline 0.1rem $color2B;
+                }
+            }
+        }
+        img {
+            width: 72%;
+        }
+        div.skills {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1.5rem;
+            .skillBox {
+                width: 100%;
+                margin-top: 1rem;
+                position: relative;
+                span {
+                    width: 6rem;
+                    height: 1.8rem;
+                    position: absolute;
+                    top: 1rem;
+                    background-color: #219653;
+                    box-shadow: 0 0.2rem 3px -5px #219653, 0 0.12rem 5px #219653;
+                    font-family: $main-font;
+                    font-weight: 400;
+                    text-align: left;
+                    text-indent: 0.5rem;
+                    line-height: 1.8rem;
+                    color: #fff;
+                    z-index: 1;
+                }
+                .skill {
+                    margin-top: 1rem;
+                    width: 100%;
+                    height: 1.8rem;
+                    background-color: rgba(196, 196, 196, 0.45);
+                    .skill_lv {
+                        height: 1.8rem;
+                        background: linear-gradient(to left, #6fcf97, #6fcf97);
+                        transition: 2s ease;
+                        box-shadow: 0 0.2rem 3px -5px #6fcf97,
+                            0 0.12rem 5px #6fcf97;
+                        width: 0;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        h2 {
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            font-weight: 500;
+            font-family: $main-font;
+            font-style: normal;
+            color: $color3C;
+            padding: 0.25rem 0;
+        }
+    }
+}
+
+@media (max-width: 1148px) {
+    section.who_i_am img {
+      width: 90%;
+    }
+}

@@ -1,0 +1,57 @@
+/* Listar */
+td {
+    &.s_icones > i {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    & > img.slide {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: contain;
+        filter: drop-shadow(0 0 0.1rem #000);
+    }
+    & a.btn_edit,
+    & a.btn_delete {
+        text-decoration: none;
+        padding: 0.25rem 0.75rem;
+        height: auto;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0.05rem 0.05rem 1px black;
+        font-size: 1rem;
+    }
+    a.btn_edit {
+        background-color: #008dff;
+        &:hover {
+            background-color: #008dffcc;
+        }
+    }
+    a.btn_delete {
+        background-color: #ff0038;
+        &:hover {
+            background-color: #ff0038cc;
+        }
+    }
+}
+
+div.paginacao {
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    & > a {
+        display: block;
+        color: #222;
+        padding: 0 0.25rem;
+        text-decoration: none;
+        border: 0.09rem solid #555;
+        border-radius: 0.15rem;
+        transition: all 1s;
+        &.selected {
+            background-color: #6fcf97d0;
+        }
+    }
+}

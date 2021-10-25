@@ -1,0 +1,135 @@
+/* aside */
+aside {
+    background: $color2B;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0.5rem 0;
+    margin-left: -25%;
+    z-index: 9999999;
+    transition: all 1s;
+    a.menu-active {
+        background-color: $color3D;
+        &::before {
+            content: " \00BB  ";
+            font-size: 1.2rem;
+            color: #111;
+        }
+    }
+
+    div.box_user {
+        width: 100%;
+        text-align: center;
+        div.avatar_user {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 25rem;
+            border: 0.2rem solid #111;
+            margin: 2% auto;
+            i {
+                margin-top: 1rem;
+                font-size: 3.25rem;
+                color: white;
+                text-shadow: 0 -0.125rem 4px #111;
+            }
+        }
+        div.imagem_user {
+            max-width: 8rem;
+            max-height: 8rem;
+            border-radius: 50%;
+            border: 0.4rem solid #010101;
+            overflow: hidden;
+            margin: 5% auto;
+            /* filter: drop-shadow(0 0 0.3rem #000); */
+            img {
+                max-width: 100%;
+                display: block;
+                object-fit: cover;
+            }
+        }
+        div.nome_user {
+            p {
+                color: white;
+                font-weight: 400;
+            }
+            span {
+                color: white;
+                font-size: 0.85rem;
+                font-weight: 300;
+            }
+        }
+    }
+
+    div.items_menu {
+        margin: 2% 0;
+        width: 100%;
+        height: auto;
+        h2 {
+            padding: 0.5rem 0.4rem;
+            color: white;
+            font-size: 1rem;
+            font-weight: normal;
+            background-color: #222;
+        }
+        a {
+            padding: 0.5rem 0.4rem;
+            display: block;
+            color: white;
+            text-decoration: none;
+            border-collapse: separate;
+            font-size: 0.75rem;
+            border-bottom: 0.2rem solid #222;
+            &:hover {
+                background-color: #3d3d3d;
+            }
+        }
+    }
+}
+
+.show-sidebar aside {
+    margin-left: 0;
+}
+
+@media (max-width: 768px) {
+    /* aside */
+    aside {
+        width: 60%;
+        margin-left: -60%;
+    }
+
+    div.box_user div.avatar_user {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    div.box_user div.avatar_user i {
+        font-size: 2.5rem;
+    }
+
+    div.box_user div.nome_user p {
+        font-size: 0.9rem;
+    }
+    div.box_user div.nome_user span {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    aside {
+        width: 100%;
+        margin-left: -100%;
+        overflow-y: hidden;
+        
+    }
+
+    header div.loggout span {
+        display: none;
+    }
+
+    div.painel_content div.box_content > h1 {
+        padding: 1rem 0;
+        font-weight: normal;
+        font-size: 1.25rem;
+    }
+}

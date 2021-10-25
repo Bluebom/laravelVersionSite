@@ -1,0 +1,69 @@
+$color3D: #3d3d3d;
+$color3C: #3c3c3c;
+$color2B: #2b2b2b;
+$main-color: #fff200;
+$main-font: "Inter", sans-serif; /* Geral */
+$secondary-font: "Source Serif Pro", serif; /* Textinhos */
+
+input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: 0.1rem solid #ccc;
+}
+
+div.center {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    padding: 0.125rem 2%;
+}
+
+/* box error do painel */
+
+div.erro_box {
+    background: linear-gradient(to left, #ff2a2a, #ff2a2a);
+    &::before {
+        border-top: 0.95rem solid #ff2a2a;
+    }
+}
+
+div.callback_success {
+    background: linear-gradient(to left, #6fcf97, #6fcf97);
+    &::before {
+        border-top: 0.95rem solid #6fcf97;
+    }
+}
+
+div.erro_box,
+div.callback_success {
+    padding: 0.5rem;
+    height: 2rem;
+    text-align: left;
+    position: relative;
+    top: -0.5rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: -0.05rem 0.1rem 4px rgba(0, 0, 0, 0.6);
+    &::before {
+        content: "-";
+        font-size: 0.005px;
+        position: absolute;
+        bottom: -40%;
+        /* background: linear-gradient(to left, #6FCF97, #6FCF97); */
+        border-right: 0.8rem solid transparent;
+        border-left: 0.8rem solid transparent;
+    }
+}
+
+/* main */
+section.topo_painel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+@import "./pages/reset", "./pages/login", "./pages/header", "./pages/aside",
+    "./pages/general", "./pages/tabela", "./pages/listar",
+    "./pages/loader.deleting.scss";
