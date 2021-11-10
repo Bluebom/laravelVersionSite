@@ -153,8 +153,53 @@ section#About {
     }
 }
 
-@media (max-width: 1148px) {
-    section.who_i_am img {
-      width: 90%;
+@media (max-width: 810px) {
+    section#About {
+        width: 100%;
+        .form_hexx {
+            flex-wrap: wrap;
+            div.w33 {
+                width: 50%;
+            }
+        }
+        section.who_i_am {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0 5%;
+            div.w50 {
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    section#About {
+        width: 100%;
+        .form_hexx {
+            flex-wrap: wrap;
+            gap: 1rem;
+            div.w33 {
+                width: 100%;
+            }
+        }
+        section.who_i_am {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0 5%;
+            div.w50 {
+                width: 100%;
+            }
+            
+        }
     }
 }
