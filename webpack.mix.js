@@ -21,6 +21,12 @@ mix.js("resources/js/app.js", "public/js")
     .webpackConfig(require("./webpack.config"));
 
 mix.js(
+    "resources/views/franklinhenrique/assets/js/script.js",
+    "public/franklinhenrique/assets/js/script.js"
+).sass(
+    "resources/views/franklinhenrique/assets/css/style.scss",
+    "public/franklinhenrique/assets/css/style.css"
+).js(
     "resources/views/painel/assets/js/script.js",
     "public/painel/assets/js/script.js"
 ).sass(

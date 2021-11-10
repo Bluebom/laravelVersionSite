@@ -101,13 +101,14 @@ section.header-desktop {
 }
 
 @media (max-width: 1148px) {
-    section.header-desktop .desktop ul {
-        width: 60%;
+    section.header-desktop .desktop nav ul{
+        width: 65%;
+        gap: 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    section.header-desktop .desktop ul {
+    section.header-desktop .desktop nav ul {
         width: 70%;
     }
 }
